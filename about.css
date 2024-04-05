@@ -117,7 +117,7 @@ section{
 .section2{
     background-color: black;
     color: #fff;
-    height: 1800px;
+    height: 2000px;
     
    
     
@@ -211,6 +211,7 @@ section{
   position: relative;
   top: 200px;
   right: 500px;
+  z-index: 1;
 }
 .center-pic img{
   width: 1000px;
@@ -235,7 +236,7 @@ section{
   }
 
   .section2{
-    height: 2500px;
+    height: 3100px;
   }
 }
 
@@ -248,5 +249,63 @@ section{
       background-size: cover;
       background-repeat: no-repeat;
       font-size: 16px;
+  }
+}
+
+
+.cards {
+  
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+
+  height: 300px;
+  width: 300px;
+  
+  color: #fff;
+  position: relative; 
+  z-index: 1; 
+ 
+  right: 90px;
+
+}
+.card{
+  
+  background-color: #0b0103e8 !important;
+  right: 250px;
+  
+
+}
+
+
+.card img{
+  border-radius: 50%;
+  width: 60px;
+  left: 60px;
+  
+}
+
+.card h1{
+  font-weight: 600;
+  text-align: center;
+
+}
+
+.card p{
+  color: #fff;
+  padding-left: 20px;
+  
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+      
+  }
+  .card {
+      text-align: left;
   }
 }
