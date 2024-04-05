@@ -107,26 +107,29 @@ section{
 }
 
 .section1{
-    background: url(./images/pexels-athena-2962135-scaled.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/pexels-athena-2962135-scaled.jpg);
     background-size: cover;
     background-attachment: fixed;
+    
     
 }
 
 .section2{
     background-color: black;
     color: #fff;
-    height: 1700px;
+    height: 1800px;
     
    
     
 }
 .section1 h1{
+  position: relative;
     text-align: center;
     font-size: 80px;
-    margin-top: 4rem;
+    top: 7rem;
     font-weight: 600;
     color: #fff;
+    
 }
 
 /* 
@@ -169,3 +172,81 @@ section{
     width: 100px;
     height: 100px;
   }
+
+
+  .features2{
+    display: flex;
+    align-items: center;
+   text-decoration: dotted;
+    
+  }
+  .feature2{
+    display: flex;
+    align-items: center;
+    
+  }
+  .featureicon2{
+    width: 40px;
+  }
+
+  .title{
+    
+    font-weight: 400;
+    margin: 10px;
+  }
+
+
+
+.tag{
+  position: relative;
+  top: 200px;
+  right: 300px;
+  text-align: center;
+}
+
+
+.center-pic{
+  display: grid;
+  place-items: center;
+  position: relative;
+  top: 200px;
+  right: 500px;
+}
+.center-pic img{
+  width: 1000px;
+  height: 500px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .tag {
+      top: 0;
+      right: 0;
+  }
+  .center-pic {
+      top: 0;
+      right: 0;
+  }
+  .center-pic img {
+      width: 100%;
+      height: auto;
+  }
+
+  .section2{
+    height: 2500px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .section1 {
+     
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 16px;
+  }
+}
