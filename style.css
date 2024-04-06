@@ -20,7 +20,7 @@ header {
   padding: 20px 10%;
 }
 .logo img {
-  max-width: 180px;
+  max-width: 200px;
   height: auto;
 }
 .navmenu {
@@ -138,11 +138,11 @@ header.sticky {
 }
 
 
-
+/* 
 .features{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+     justify-content: space-between; 
     padding: 50px;
   }
   .feature{
@@ -165,7 +165,7 @@ header.sticky {
   .featureicon{
     width: 200px;
     height: 190px;
-  }
+  } */
 /* 
   .feature img{
     width: 150px;
@@ -182,6 +182,9 @@ header.sticky {
     .h2 {
       font-size: 1.75rem; 
     }
+    .hero-img{
+      width: 400px;
+    }
   }
 
 
@@ -193,3 +196,67 @@ header.sticky {
   color: hsla(0,0%,100%,0.6);
 } 
 
+
+
+
+
+   .features{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    position: relative;
+    right: 100px;
+  }
+  .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .featuretitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  .featured-desription{
+    color: gray;
+    width: 50%;
+    height: 100px;
+  
+  }
+  .featureicon{
+    width: 50px;
+    height: 50px;
+  }
+/* card section */
+
+.features3{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  position: relative;
+  left: 540px;
+  bottom: 150px;
+}
+.feature3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+@media (max-width: 600px) {
+  .features3 {
+      flex-direction: column; /* Stack cards vertically */
+      left: 0; /* Reset the left position */
+      bottom: 0; /* Reset the bottom position */
+  }
+  .features{
+    left: 0;
+    bottom: 0;
+  }
+}

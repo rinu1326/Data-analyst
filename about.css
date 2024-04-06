@@ -15,7 +15,7 @@ header {
     padding: 20px 10%;
   }
   .logo img {
-    max-width: 120px;
+    max-width: 200px;
     height: auto;
   }
   .navmenu {
@@ -188,7 +188,7 @@ section{
   .featureicon2{
     width: 40px;
   }
-
+  
   .title{
     
     font-weight: 400;
